@@ -1,0 +1,135 @@
+.projects {
+    min-height: 100vh;
+    padding: 100px 8%;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+}
+
+.projects h2 {
+    font-size: 48px;
+    margin-bottom: 15px;
+}
+
+.projects p {
+    font-size: 18px;
+    color: #cbd5e1;
+    margin-bottom: 60px;
+}
+
+/* Grid */
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    gap: 35px;
+}
+
+/* Card */
+
+.project-card {
+    position: relative;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: left;
+    overflow: hidden;
+    transition: all .35s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 18px 35px rgba(56,189,248,.35);
+    border-color: #38bdf8;
+}
+
+/* Icon */
+
+.project-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 45px;
+    color: #38bdf8;
+    transition: .35s ease;
+}
+
+.project-card:hover .project-icon {
+    transform: scale(1.2) rotate(8deg);
+}
+
+/* Title */
+
+.project-card h3 {
+    font-size: 26px;
+    margin-bottom: 18px;
+    color: white;
+}
+
+/* Description */
+
+.project-card p {
+    color: #cbd5e1;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+/* Tech Stack */
+
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.tech-stack span {
+    background: rgba(56,189,248,.15);
+    color: #38bdf8;
+    padding: 8px 15px;
+    border-radius: 25px;
+    font-size: 14px;
+    border: 1px solid rgba(56,189,248,.3);
+}
+
+/* Button */
+
+.project-card button {
+    padding: 12px 22px;
+    border: none;
+    border-radius: 30px;
+    background: #38bdf8;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.project-card button:hover {
+    background: white;
+    color: #0f172a;
+    transform: scale(1.05);
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+
+    .projects h2 {
+        font-size: 36px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        padding: 25px;
+    }
+
+    .project-icon {
+        font-size: 35px;
+    }
+}
