@@ -37,19 +37,58 @@ function Hero() {
       <span className="dot green"></span>
     </div>
 
-    <pre>
-{`const developer = {
-  name: "Chinta",
-  role: "Aspiring Frontend Developer",
-  skills: [
-    "React",
-    "JavaScript",
-    "Node.js",
-    "MongoDB"
-  ],
-  status: "Open to Work"
-};`}
-    </pre>
+   <pre className="code-block">
+  <code>
+    <span className="keyword">const</span>{" "}
+    <span className="variable">developer</span>{" "}
+    <span className="operator">=</span>{" "}
+    <span className="brace">{"{"}</span>
+
+    {"\n  "}
+    <span className="property">name</span>
+    <span className="colon">:</span>{" "}
+    <span className="string">"Vidya"</span>
+    <span className="comma">,</span>
+
+    {"\n  "}
+    <span className="property">role</span>
+    <span className="colon">:</span>{" "}
+    <span className="string">"Aspiring Frontend Developer"</span>
+    <span className="comma">,</span>
+
+    {"\n  "}
+    <span className="property">skills</span>
+    <span className="colon">:</span>{" "}
+    <span className="brace">[</span>
+
+    {"\n    "}
+    <span className="string">"React"</span>
+    <span className="comma">,</span>
+
+    {"\n    "}
+    <span className="string">"JavaScript"</span>
+    <span className="comma">,</span>
+
+    {"\n    "}
+    <span className="string">"Node.js"</span>
+    <span className="comma">,</span>
+
+    {"\n    "}
+    <span className="string">"MongoDB"</span>
+
+    {"\n  "}
+    <span className="brace">]</span>
+    <span className="comma">,</span>
+
+    {"\n  "}
+    <span className="property">status</span>
+    <span className="colon">:</span>{" "}
+    <span className="string">"Open to Work"</span>
+
+    {"\n"}
+    <span className="brace">{"};"}</span>
+  </code>
+</pre>
 
     <span className="cursor">|</span>
 
