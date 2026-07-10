@@ -4,10 +4,11 @@ import "./About.css";
 function About() {
   return (
     <section id="about" className="about">
-        <br />
-        <br />
         
+
     <h2>About Me</h2>
+    <br />
+
 
     <div className="about-container">
 
@@ -31,7 +32,7 @@ function About() {
 
         <div className="education-card">
 
-            <h3>🎓 Education</h3>
+            <h3>Education</h3>
 
             <p><strong>B.Tech (UG)</strong></p>
 
