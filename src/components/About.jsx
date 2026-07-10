@@ -4,7 +4,9 @@ import "./About.css";
 function About() {
   return (
     <section id="about" className="about">
-
+        <br />
+        <br />
+        
     <h2>About Me</h2>
 
     <div className="about-container">
